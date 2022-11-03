@@ -19,9 +19,11 @@ body {
 
 .nav-wrapper {
   position: fixed;
-  z-index: 1;
-  padding-top: 35px;
+  padding: 37px 0;
   width: 100%;
+  background-color: rgba(0, 0, 0, 0.0);
+  z-index: 1;
+  transition: all 0.5s;
 }
 
 .logo {
