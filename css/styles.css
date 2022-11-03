@@ -241,6 +241,10 @@ body {
   font-weight: 800;
 }
 
+.section-2 .main-head {
+  max-width: 450px;
+}
+
 .section-text {
   max-width: 500px;
   position: absolute;
