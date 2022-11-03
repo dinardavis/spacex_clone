@@ -40,6 +40,7 @@ body {
 
 .inner-container {
   display: flex;
+  align-items: center;
   width: 100%;
   max-width: 1350px;
   height: 100%;
@@ -410,7 +411,7 @@ body {
   .logo {
     position: absolute;
     top: 15px;
-    left: calc(50% - 100px);
+    left: calc(50% - 60px);
     width: 150px;
   } 
 
