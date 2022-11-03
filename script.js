@@ -3,6 +3,17 @@
 
 let prevScrollpos = window.pageYOffset;
 
+
+function styleMainContainer() {
+  let windowWidth = window.innerWidth;
+  if(windowWidth > 1400) {
+    
+  }
+}
+
+window.addEventListener("resize", styleMainContainer)
+
+
 function styleNavbarOnScroll(element) {
   const section1 = document.querySelector(".section-1");
   const mainNavItem = document.querySelector(".nav-item");

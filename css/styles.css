@@ -29,14 +29,22 @@ body {
 .logo {
   width: 210px;
   display: block;
-  margin-left: 50px;
 }
 
 .main-nav {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
   width: 100%;
+}
+
+.inner-container {
+  display: flex;
+  width: 100%;
+  max-width: 1350px;
+  height: 100%;
+  padding-left: 50px;
+  margin: 0 auto;
 }
 
 .primary-links {
@@ -51,7 +59,8 @@ body {
 .secondary-links {
   display: flex;
   margin-left: auto;
-  margin-right: 50px;
+  position: absolute;
+  right: 50px;
 }
 
 .nav-item {
@@ -250,7 +259,6 @@ body {
 .section-text {
   max-width: 500px;
   position: absolute;
-  left: 50px;
   bottom: 16%;
   color: #fff;
 }
@@ -381,6 +389,7 @@ body {
   padding: 6px 0;
 }
 
+
 @media screen and (max-width: 1200px) {
   .main-head {
     width: 350px;
@@ -450,7 +459,7 @@ body {
   }
 
   .secondary-links {
-    margin-right: 20px;
+    right: 20px;
   }
 
   .main-head {
