@@ -44,4 +44,25 @@ window.onscroll = function() {
   prevScrollpos = currentScrollPos; 
 }
 
+// SIDEBAR ANIMATION
+const burgerInput = document.querySelector(".burger-input")
+
+function animateSidebar() {
+  const sidebarMenu = document.querySelector(".sidebar-menu")
+
+  if(burgerInput.checked) {
+    sidebarMenu.classList.remove("toggle-sidebar")
+  } else {
+    sidebarMenu.classList.add("toggle-sidebar")
+  }
+
+  console.log(burgerInput.checked)
+
+}
+
+burgerInput.addEventListener("change", animateSidebar)
+
+
+
+
 
