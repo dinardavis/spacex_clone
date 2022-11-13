@@ -231,10 +231,10 @@ body {
 }
 
 .background-1 {
-  background-image: url('../imgs/ussf-44.png'); 
+  background-image: url('../imgs/intelsat.png'); 
 }
 .background-2 {
-  background-image: url('../imgs/eutelsat.png'); 
+  background-image: url('../imgs/ussf-44.png'); 
 }
 .background-3 {
   background-image: url('../imgs/starship.png'); 
@@ -400,7 +400,7 @@ body {
 
 @media screen and (max-width: 1200px) {
   .main-head {
-    width: 350px;
+    width: 400px;
   }
 }
 
