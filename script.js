@@ -48,12 +48,18 @@ window.onscroll = function() {
 const burgerInput = document.querySelector(".burger-input")
 
 function animateSidebar() {
+  const sidebarDesktop = document.querySelector(".sidebar-desktop")
+  const sidebarMobile = document.querySelector(".sidebar-mobile")
   const sidebarMenu = document.querySelector(".sidebar-menu")
 
   if(burgerInput.checked) {
-    sidebarMenu.classList.remove("toggle-sidebar")
+    sidebarDesktop.classList.remove("toggle-sidebar-sub")
+    sidebarMobile.classList.remove("toggle-sidebar-sub")
+    sidebarMenu.classList.remove("toggle-sidebar-menu")
   } else {
-    sidebarMenu.classList.add("toggle-sidebar")
+    sidebarDesktop.classList.add("toggle-sidebar-sub")
+    sidebarMobile.classList.add("toggle-sidebar-sub")
+    sidebarMenu.classList.add("toggle-sidebar-menu")
   }
 
   console.log(burgerInput.checked)
