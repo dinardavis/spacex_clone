@@ -1,22 +1,15 @@
+let prevScrollPos = window.pageYOffset;
 
-// MAIN NAVBAR SCROLL ANIMATION 
+const sidebarDesktop = document.querySelector(".sidebar-desktop")
+const sidebarMobile = document.querySelector(".sidebar-mobile")
+const sidebarMenu = document.querySelector(".sidebar-menu")
+const burgerInput = document.querySelector(".burger-input")
 
-let prevScrollpos = window.pageYOffset;
 
-
-function styleMainContainer() {
-  let windowWidth = window.innerWidth;
-  if(windowWidth > 1400) {
-    
-  }
-}
-
-window.addEventListener("resize", styleMainContainer)
-
+// FUNCTION TO STYLE MAIN NAV BACKGROUND COLOR 
 
 function styleNavbarOnScroll(element) {
   const section1 = document.querySelector(".section-1");
-  const mainNavItem = document.querySelector(".nav-item");
 
   let top_of_section1 = section1.offsetTop;
   let bottom_of_section1 = section1.offsetTop + section1.offsetHeight + section1.style.marginTop;
@@ -30,40 +23,51 @@ function styleNavbarOnScroll(element) {
   }
 }
 
+/*
+EVENT LISTENER FOR WINDOW SCROLL
+- HIDE/SHOW TOP NAVBAR ON SCROLL
+- IF SIDEBAR IS SHOWING, HIDE SIDEBAR ON SCROLL
+*/
+
 window.onscroll = function() {
   const navWrapper = document.querySelector(".nav-wrapper")
   let currentScrollPos = window.pageYOffset;
 
   styleNavbarOnScroll(navWrapper)
-
-  if (prevScrollpos > currentScrollPos) {
+  if (prevScrollPos > currentScrollPos) {
     navWrapper.style.top = "0";
+    burgerInput.checked = false;
+    hideSidebarMenu()
   } else {
     navWrapper.style.top = "-105px";
+    burgerInput.checked = false;
+    hideSidebarMenu()
   }
-  prevScrollpos = currentScrollPos; 
+  prevScrollPos = currentScrollPos; 
 }
 
-// SIDEBAR ANIMATION
-const burgerInput = document.querySelector(".burger-input")
+// SIDEBAR ANIMATION TOGGLE CLASS ADD/REMOVE
+
+function showSidebarMenu() {
+  sidebarDesktop.classList.remove("toggle-sidebar-sub")
+  sidebarMobile.classList.remove("toggle-sidebar-sub")
+  sidebarMenu.classList.remove("toggle-sidebar-menu")
+}
+
+function hideSidebarMenu() {
+  sidebarDesktop.classList.add("toggle-sidebar-sub")
+  sidebarMobile.classList.add("toggle-sidebar-sub")
+  sidebarMenu.classList.add("toggle-sidebar-menu")
+}
+
+// ANIMATE SIDEBAR ON BURGER CLICK
 
 function animateSidebar() {
-  const sidebarDesktop = document.querySelector(".sidebar-desktop")
-  const sidebarMobile = document.querySelector(".sidebar-mobile")
-  const sidebarMenu = document.querySelector(".sidebar-menu")
-
   if(burgerInput.checked) {
-    sidebarDesktop.classList.remove("toggle-sidebar-sub")
-    sidebarMobile.classList.remove("toggle-sidebar-sub")
-    sidebarMenu.classList.remove("toggle-sidebar-menu")
+    showSidebarMenu()
   } else {
-    sidebarDesktop.classList.add("toggle-sidebar-sub")
-    sidebarMobile.classList.add("toggle-sidebar-sub")
-    sidebarMenu.classList.add("toggle-sidebar-menu")
+    hideSidebarMenu()
   }
-
-  console.log(burgerInput.checked)
-
 }
 
 burgerInput.addEventListener("change", animateSidebar)
