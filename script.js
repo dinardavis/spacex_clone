@@ -1,20 +1,20 @@
-let prevScrollPos = window.pageYOffset;
+let prevScrollPos = window.pageYOffset
 
 const sidebarDesktop = document.querySelector(".sidebar-desktop")
 const sidebarMobile = document.querySelector(".sidebar-mobile")
 const sidebarMenu = document.querySelector(".sidebar-menu")
 const burgerInput = document.querySelector(".burger-input")
-
+const mainContainer = document.querySelector(".main-container")
 
 // FUNCTION TO STYLE MAIN NAV BACKGROUND COLOR 
 
 function styleNavbarOnScroll(element) {
-  const section1 = document.querySelector(".section-1");
+  const section1 = document.querySelector(".section-1")
 
-  let top_of_section1 = section1.offsetTop;
-  let bottom_of_section1 = section1.offsetTop + section1.offsetHeight + section1.style.marginTop;
-  let bottom_of_screen = window.scrollY + window.innerHeight;
-  let top_of_screen = window.scrollY;
+  let top_of_section1 = section1.offsetTop
+  let bottom_of_section1 = section1.offsetTop + section1.offsetHeight + section1.style.marginTop
+  let bottom_of_screen = window.scrollY + window.innerHeight
+  let top_of_screen = window.scrollY
 
   if ((bottom_of_screen > top_of_section1) && (top_of_screen < bottom_of_section1)) {
     element.style.backgroundColor = 'rgba(0,0,0,0.0)'
@@ -24,6 +24,23 @@ function styleNavbarOnScroll(element) {
 }
 
 /*
+EVENT LISTENER FOR WINDOW CLICK
+- IF SIDEBAR IS SHOWING, HIDE SIDEBAR ON WINDOW CLICK
+*/
+
+mainContainer.addEventListener('click', () => {
+  if(burgerInput.checked) {
+    burgerInput.checked = false
+    hideSidebarMenu()
+  }
+})
+
+burgerInput.addEventListener('click', (e) => {
+  e.stopPropagation()
+})
+
+
+/*
 EVENT LISTENER FOR WINDOW SCROLL
 - HIDE/SHOW TOP NAVBAR ON SCROLL
 - IF SIDEBAR IS SHOWING, HIDE SIDEBAR ON SCROLL
@@ -31,19 +48,19 @@ EVENT LISTENER FOR WINDOW SCROLL
 
 window.onscroll = function() {
   const navWrapper = document.querySelector(".nav-wrapper")
-  let currentScrollPos = window.pageYOffset;
+  let currentScrollPos = window.pageYOffset
 
   styleNavbarOnScroll(navWrapper)
   if (prevScrollPos > currentScrollPos) {
-    navWrapper.style.top = "0";
-    burgerInput.checked = false;
+    navWrapper.style.top = "0"
     hideSidebarMenu()
+    burgerInput.checked = false
   } else {
-    navWrapper.style.top = "-105px";
-    burgerInput.checked = false;
+    navWrapper.style.top = "-105px"
     hideSidebarMenu()
+    burgerInput.checked = false
   }
-  prevScrollPos = currentScrollPos; 
+  prevScrollPos = currentScrollPos 
 }
 
 // SIDEBAR ANIMATION TOGGLE CLASS ADD/REMOVE
