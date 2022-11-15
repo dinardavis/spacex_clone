@@ -24,7 +24,7 @@ function styleNavbarOnScroll(element) {
 }
 
 /*
-EVENT LISTENER FOR WINDOW CLICK
+EVENT LISTENER FOR MAIN CONTAINER/WINDOW CLICK
 - IF SIDEBAR IS SHOWING, HIDE SIDEBAR ON WINDOW CLICK
 */
 
@@ -38,7 +38,6 @@ mainContainer.addEventListener('click', () => {
 burgerInput.addEventListener('click', (e) => {
   e.stopPropagation()
 })
-
 
 /*
 EVENT LISTENER FOR WINDOW SCROLL
