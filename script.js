@@ -1,5 +1,4 @@
 let prevScrollPos = window.pageYOffset
-
 const sidebarDesktop = document.querySelector(".sidebar-desktop")
 const sidebarMobile = document.querySelector(".sidebar-mobile")
 const sidebarMenu = document.querySelector(".sidebar-menu")
@@ -62,7 +61,7 @@ window.onscroll = function() {
   prevScrollPos = currentScrollPos 
 }
 
-// SIDEBAR ANIMATION TOGGLE CLASS ADD/REMOVE
+// SIDEBAR ANIMATION TOGGLE CLASS ADD/REMOVE FUNCTIONS
 
 function showSidebarMenu() {
   sidebarDesktop.classList.remove("toggle-sidebar-sub")
@@ -76,7 +75,7 @@ function hideSidebarMenu() {
   sidebarMenu.classList.add("toggle-sidebar-menu")
 }
 
-// ANIMATE SIDEBAR ON BURGER CLICK
+// SIDEBAR ANIMATION ON BURGER CLICK
 
 function animateSidebar() {
   if(burgerInput.checked) {
