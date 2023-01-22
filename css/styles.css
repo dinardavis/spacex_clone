@@ -236,16 +236,16 @@ body {
 }
 
 .background-1 {
-  background-image: url('../imgs/swot.png'); 
+  background-image: url('../imgs/gpsIII.png'); 
 }
 .background-2 {
-  background-image: url('../imgs/mpower.png'); 
-}
-.background-3 {
   background-image: url('../imgs/starlink.png'); 
 }
+.background-3 {
+  background-image: url('../imgs/ussf-67.png'); 
+}
 .background-4 {
-  background-image: url('../imgs/starship_landing.png'); 
+  background-image: url('../imgs/starship_moon.png'); 
 }
 .background-5 {
   background-image: url('../imgs/starship.png'); 
