@@ -51,7 +51,13 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-<img src="imgs/spacex_thumbnail.png" alt="Project Thumbnail" height="100">
+<br />
+
+<div align="center">
+  <img src="imgs/spacex_thumbnail.png" alt="Project Thumbnail" height="500">
+</div>
+
+<br />
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
