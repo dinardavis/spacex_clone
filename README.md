@@ -1,6 +1,6 @@
 <!-- PROJECT LOGO -->
 <br />
-<div align="center">
+<div align="center" id="top">
   <a href="https://github.com/dinardavis/spacex_clone">
     <img src="imgs/spacex.png" alt="SpaceX Logo" height="40">
   </a>
@@ -59,7 +59,7 @@
 
 <br />
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#top">back to top</a>)</p>
 
 
 
@@ -69,7 +69,7 @@
 * <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" />
 * <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" />
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#top">back to top</a>)</p>
 
 
 
@@ -94,7 +94,7 @@ git clone https://github.com/dinardavis/spacex_clone
 
 * With the files open in Visual Studio Code, press the **Go Live** button at the bottom of the window to launch the files with [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer).
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#top">back to top</a>)</p>
 
 
 <!-- CONTRIBUTING -->
@@ -111,7 +111,7 @@ If you like the project, a star would be much appreciated! Thanks again!
 4. Push to the Branch (`git push origin feature/NewFeature`)
 5. Open a Pull Request
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#top">back to top</a>)</p>
 
 
 <!-- CONTACT -->
@@ -126,4 +126,4 @@ If you like the project, a star would be much appreciated! Thanks again!
 
 Project Link: [https://github.com/dinardavis/spacex_clone](https://github.com/dinardavis/spacex_clone)
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#top">back to top</a>)</p>
