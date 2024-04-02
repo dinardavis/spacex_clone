@@ -48,7 +48,7 @@ body {
   display: flex;
   align-items: center;
   width: 100%;
-  max-width: 1350px;
+  /* max-width: 1550px; */
   height: 100%;
   padding-left: 50px;
   margin: 0 auto;
@@ -57,10 +57,10 @@ body {
 .primary-links {
   display: flex;
   justify-content: space-between;
-  width: 667px;
+  width: 800px;
   font-weight: 400;
   margin-top: 8px;
-  margin-left: 35px;
+  /* margin-left: 35px; */
 }
 
 .secondary-links {
@@ -236,19 +236,19 @@ body {
 }
 
 .background-1 {
-  background-image: url('../imgs/gpsIII.png'); 
+  background-image: url('../imgs/eutelsat.jpg'); 
 }
 .background-2 {
-  background-image: url('../imgs/starlink.png'); 
+  background-image: url('../imgs/starlink_mission.jpg'); 
 }
 .background-3 {
-  background-image: url('../imgs/ussf-67.png'); 
+  background-image: url('../imgs/starlink.jpg'); 
 }
 .background-4 {
-  background-image: url('../imgs/starship_moon.png'); 
+  background-image: url('../imgs/crs-30.jpg'); 
 }
 .background-5 {
-  background-image: url('../imgs/starship.png'); 
+  background-image: url('../imgs/starship.jpg'); 
 }
 
 .background {
@@ -414,7 +414,7 @@ body {
 
 @media screen and (max-width: 1100px) {
   .primary-links {
-    width: 610px;
+    width: 710px;
   }
 }
 
